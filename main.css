@@ -3,6 +3,9 @@
 :root{
     --color--blue: #112950;
     --background--bg: #fff;
+    --btn-background: #1049e7ef;
+    --btn-background-hover: #1049e7;
+    --background-bg2: rgb(234, 238, 240);
 }
 *,
 ::after,
@@ -15,14 +18,152 @@ body{
     font-family: 'Inter', sans-serif;
     background: var(--background--bg);
 }
+
+/*-------------------------selectors--------------------*/
 a{
     text-decoration: none;
 }
+img{
+    max-width: 100%;
+}
+h1,
+h2{
+    padding: 1em 0em;
+    color: var(--color--blue);
+}
+h3{
+    padding-top: 1em;
+    color: var(--color--blue);
+}
+h4{
+    color: var(--color--blue);
+}
+p{
+    color: var(--color--blue);
+    padding: 1em 0em;
+}
+.cap_title{
+    color: var(--color--blue);
+    padding: 1em 0em;
+    white-space: nowrap;
+}
+
+/*-----------------buttons----------------*/
+
+.btn{
+    padding: 1em 0em;
+    
+}
+.hero .btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.btn_blue{
+    background: var(--btn-background);
+    padding: 1em 2em;
+    font-weight: bold;
+    color: var(--background--bg);
+    border-radius: 15px;
+}
+.hero .btn .btn_blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .btn .btn_white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+.btn_blue:hover{
+    background: var(--btn-background-hover);
+}
+.btn_white{
+    background: var(--background--bg);
+    padding: 1em 2em;
+    font-weight: bold;
+    color: var(--btn-background);
+    border-radius: 15px;
+    border: 1px solid var(--btn-background);
+}
+.btn_white:hover{
+    background: var(--btn-background);
+    color: var(--background--bg);
+}
+
+
+
+
 .main{
     padding: 1.3em;
 }
-.li .nav_dorptown{
-    display: none;
 
-    
+
+
+/*---------------------------navigation menu----------------------------------*/
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
+.nav_flex{
+    display: flex;
+    justify-content: center;
+}
+.ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+.li .nav_head{
+    color: var(--color--blue);
+}
+.nav_flex i{
+    color: var(--btn-background-hover);
+    cursor: pointer;
+}
+.nav_flex i:hover{
+    color: var(--btn-background);
+}
+.li{
+    position: relative;
+}
+.nav_dorptown{
+    position: absolute;
+    top: 40px;
+    left: -600px;
+    background-color: var(--background-bg2);
+    padding: 1em 3em;
+}
+.li .nav_dorptown .nav_dorptown_inside{
+    display: flex;
+    gap: 30px;
+    padding: 1.3em;
+
+}
+.nav_flex_inside{
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+    width: 200px;
+}
+.heath_img{
+    border-radius: 10px;
+}
+.industries_chevron{
+    display: block;
+    float: right;
+    width: 20px;
+}
+
