@@ -4,7 +4,7 @@
     --color--blue: #112950;
     --background--bg: #fff;
     --btn-background: #1049e7ef;
-    --btn-background-hover: #1049e7;
+    --btn-background-hover: #1049e7c9;
     --background-bg2: rgb(234, 238, 240);
 }
 *,
@@ -28,7 +28,7 @@ img{
 }
 h1,
 h2{
-    padding: 1em 0em;
+    padding: 0.5em 0em;
     color: var(--color--blue);
 }
 h3{
@@ -40,7 +40,6 @@ h4{
 }
 p{
     color: var(--color--blue);
-    padding: 1em 0em;
 }
 .cap_title{
     color: var(--color--blue);
@@ -51,7 +50,7 @@ p{
 /*-----------------buttons----------------*/
 
 .btn{
-    padding: 1em 0em;
+    padding: 1.5em 0em;
     
 }
 .hero .btn{
@@ -99,15 +98,48 @@ p{
 
 
 
-.main{
-    padding: 1.3em;
-}
 
 
 
 /*---------------------------navigation menu----------------------------------*/
+.nav{
+    padding: 1em 0em;
+}
+.nav_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.nav_width{
+    width: 30px;
+    height: 30px;
+    background: var(--btn-background-hover);
+    border-radius: 5px;
+    position: relative;
+}
+.nav_plus{
+    width: 4px;
+    height: 15px;
+    background: var(--background--bg);
+    position: absolute;
+    left: 13px;
+    top: 8px;
+}
+.nav_plus2{
+    width: 4px;
+    height: 16px;
+    background: var(--background--bg);
+    position: absolute;
+    left: 13px;
+    top: 7px;
+    transform: rotate(90deg);
 
-
+}
+.nav_name{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -118,10 +150,12 @@ p{
 .nav_flex{
     display: flex;
     justify-content: center;
+    
 }
 .ul{
+    
     list-style: none;
-    display: flex;
+    display:none;
     justify-content: center;
     align-items: center;
     gap: 10px
@@ -146,6 +180,15 @@ p{
     background-color: var(--background-bg2);
     padding: 1em 3em;
 }
+.box1{
+    left: -400px;
+}
+.box2{
+    left: -550px;
+}
+.box-size2{
+    width: 350px !important;
+}
 .li .nav_dorptown .nav_dorptown_inside{
     display: flex;
     gap: 30px;
@@ -156,7 +199,7 @@ p{
     padding: 1em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 15px;
-    width: 200px;
+    width: 260px;
 }
 .heath_img{
     border-radius: 10px;
@@ -167,3 +210,225 @@ p{
     width: 20px;
 }
 
+
+
+
+
+/*--------------hero section-----------------------------*/
+.hero{
+    padding: 1em;
+}
+.hero_content{
+    text-align: center;
+    max-width: 800px;
+    margin: 0em auto;
+}
+.hero_title{
+    font-size: clamp(2rem ,5vw, 3.5rem);
+    padding-top: 3em;
+}
+.hero_para{
+    font-size: 1.1rem;
+    padding: 1em 0em;
+}
+.hero_img{
+    aspect-ratio: 1 / 1;
+    background-image: url("./images/hero_illo_optimised_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+
+
+/*------------------------industriel section--------------------------------------*/
+.industriel{
+    background: var(--background-bg2);
+    padding: 1.3em;
+}
+.ind_title{
+    max-width: 700px;
+    font-size: 2.6rem;
+}
+.ind_para{
+    max-width: 500px;
+}
+
+/*---------industriels box------------*/
+.ind_card .btn{
+  margin: 2em 0em;
+}
+.ind_card{
+    margin: 4em 0em;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+}
+.space_vertical{
+    width: 1px;
+    height: 120px;
+    background: #11295073;
+    position: absolute;
+    margin-top: 10px;
+}
+.space_flex{
+    margin-left: 1em;
+}
+.inside_space_para{
+    padding-bottom: 1em;
+}
+.spac_small{
+    color: var(--color--blue);
+}
+
+
+
+
+/*---------------------company partners--------------------*/
+
+.partners{
+    padding: 1em;
+}
+.partners .cap_title{
+    text-align: center;
+}
+.partners_logo{
+    width: 80%;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+.partners_img:nth-of-type(1){
+    flex: 1 100px;
+}
+.partners_img:nth-of-type(2){
+    flex: 2 100px;
+}
+
+
+
+/*-----------------------Resources-----------------------------------*/
+.resources{
+    background: var(--background-bg2);
+
+}
+.resources .cap_title{
+    padding: 2em;
+}
+.resources_head{
+    padding: 2em;
+}
+.resources_para{
+    font-size: 1.2rem;
+}
+
+/*---resources box-----*/
+.re_card{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 2em 2em;
+    padding: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    
+}
+.re_card:nth-of-type(4){
+    background: var(--color--blue);
+}
+
+.re_card_box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.re_card_img{
+    width: 50px;
+}
+.follow-up{
+    padding: 1em 0em;
+}
+.re_card_title{
+    padding: 0.6em 0em;
+}
+.btn-white{
+    border: 1px solid var(--btn-background-hover);
+    color: var(--color--blue);
+    padding: 0.4em 0.4em;
+    border-radius: 30px;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+/*--------------------upgrade-------------------------*/
+
+.upgrade{
+    padding: 4em 0.4em;
+    text-align: center;
+}
+
+
+
+/*-----------------------testmonial--------------*/
+
+.testmonial{
+    background: var(--background-bg2);
+
+}
+.test_head{
+    padding: 1em;
+}
+.test_card_box{
+    margin: 2em;
+    padding: 3em 2em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+}
+.test_card_img{
+    padding-bottom: 0.5em;
+}
+.test_card_para{
+    padding-bottom: 2em;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.card_name{
+    padding: 0.6em 0em;
+}
+.card_box_img{
+    width: 150px;
+    
+}
+
+/*--------------------------------------API benefits--------------------*/
+
+.api_content{
+    padding: 1em;
+}
+.api_title{
+    font-size: 2.5rem;
+}
+.api_img{
+    width: 360px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-self: flex-end;
+}
+.api_content_title{
+    padding: 1em 0em;
+}
+
+.api_para{
+    line-height: 2;
+}
