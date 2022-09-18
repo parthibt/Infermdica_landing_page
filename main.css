@@ -217,6 +217,7 @@ p{
 /*--------------hero section-----------------------------*/
 .hero{
     padding: 1em;
+    margin: 0em auto;
 }
 .hero_content{
     text-align: center;
@@ -225,7 +226,7 @@ p{
 }
 .hero_title{
     font-size: clamp(2rem ,5vw, 3.5rem);
-    padding-top: 3em;
+    padding-top: 2em;
 }
 .hero_para{
     font-size: 1.1rem;
@@ -238,6 +239,7 @@ p{
     background-position: center;
     background-size: contain;
 }
+
 
 
 
@@ -265,6 +267,7 @@ p{
     padding: 2em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 15px;
+    background: var(--background--bg);
 }
 .space_vertical{
     width: 1px;
@@ -336,6 +339,7 @@ p{
     padding: 1em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10px;
+    background: var(--background--bg);
     
 }
 .re_card:nth-of-type(4){
@@ -389,9 +393,10 @@ p{
 }
 .test_card_box{
     margin: 2em;
-    padding: 3em 2em;
+    padding: 1em 2em;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 15px;
+    background: var(--background--bg);
 }
 .test_card_img{
     padding-bottom: 0.5em;
@@ -408,6 +413,14 @@ p{
     width: 150px;
     
 }
+.test_link{
+    text-align: center;
+    padding: 1em 0em;
+}
+.testmonial_link{
+    color: var(--btn-background-hover);
+    font-size: 1.2rem;
+}
 
 /*--------------------------------------API benefits--------------------*/
 
@@ -417,13 +430,13 @@ p{
 .api_title{
     font-size: 2.5rem;
 }
-.api_img{
-    width: 360px;
-    margin: auto;
+.api_content_img{
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
-    align-self: flex-end;
+    align-items: center;
+}
+.api_img{
+    width: 360px;
 }
 .api_content_title{
     padding: 1em 0em;
@@ -431,4 +444,286 @@ p{
 
 .api_para{
     line-height: 2;
+}
+.api_chevron{
+    margin-right: 0.4em;
+}
+.api_speed{
+    padding: 5em 1em;
+}
+.api_vertical{
+    width: 4px;
+    height: 80px;
+    background-color: #112950;
+    position: absolute;
+    margin-top: 1em;
+
+}
+.api_nps{
+    margin-left: 1em;
+}
+.api_speed_box{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+
+
+
+/*---------------------singup page----------------------------*/
+
+.singup{
+    background: var(--background-bg2);
+}
+.wrapper{
+    max-width: 500px;
+    margin: auto;
+    padding: 0em 1em;
+}
+.singup_head{
+    text-align: center;
+}
+.singup_para{
+    font-size: 1.1rem;
+    padding-bottom: 1em;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.singup_para_sm{
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    max-width: 500px;
+    margin: auto;
+}
+
+input[type="text"],input[type="email"]{
+    width: 100%;
+    padding: 0.7em 0.5em;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #80808070;
+    border-radius: 5px;
+    margin: 1em 0em;
+    font-family: inherit;
+    color: var(--color--blue);
+}
+input::placeholder{
+    color: #112950;
+    padding-left: 1em !important;
+}
+label{
+    color: var(--color--blue);
+    font-size: 1.1rem;
+}
+.red{
+    color: red;
+}
+.singup select{
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 1px solid #80808070;
+    border-radius: 5px;
+    margin: 1em 0em;
+    font-size: 1rem;
+    color: var(--color--blue);
+    font-family: inherit;
+}
+option{
+    color: #112950;
+    background: #fff;
+    font-size: 1.2rem;
+
+}
+option:hover{
+    background: var(--btn-background-hover);
+}
+textarea{
+    width: 100%;
+    margin: 1em 0em;
+    outline: none;
+    border: 1px solid #80808070;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color--blue);
+    
+}
+.singup .btn{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+  
+
+/*---------------------------------foooter--------------------------------*/
+
+.footer a{
+    color: var(--color--blue);
+}
+.footer_para{
+    line-height: 2;
+}
+.footer_warpper{
+    padding: 1em;
+}
+
+
+
+/*----------------------------------media querys-----------------------------*/
+@media(min-width: 846px){
+    .hero .btn{
+        display: flex;
+        flex-direction: row;
+    }
+    .hero_para{
+        max-width: 600px;
+        margin: auto;
+        font-size: 1.4rem;
+    }
+    .hero_img{
+        background-image: url("./images/hero_illo_optimised.jpg");
+    }
+}
+
+
+@media(min-width: 1000px){
+    .ind_card{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .ind_card{
+        max-width: 900px;
+        margin: 4em auto;
+    }
+    .card_inside_title{
+        font-size: 2rem;
+    }
+
+    /*i------ndustriels-----*/
+    .industriel_head{
+        padding: 0em 5em;
+    }
+    .industriel .cap_title{
+        padding-left: 4em;
+    }
+    .ind_card_inside{
+        max-width: 500px;
+    }
+
+    /*-----partners-----*/
+    .partners{
+        width: 70%;
+        margin: auto;
+    }
+
+    /*--------resources---------*/
+    .resources .cap_title{
+        padding-left: 5em;
+    }
+
+    .resources_head{
+        max-width: 600px;
+        padding-left: 6em;
+    }
+    .resources_cards{
+       display: grid;
+       grid-template-columns: repeat(2,auto);
+       width: 80%;
+       margin: auto;
+    }
+    .re_card_title{
+        font-size: 1.6rem;
+    }
+    .re_card_para{
+        font-size: 1.1rem;
+    }
+    .re_card_box{
+        padding: 1em 1em;
+    }
+
+    /*----upgrade---------*/
+    .upgrade{
+        padding: 8em 3em;
+    }
+    .upgrade_title{
+        max-width: 800px;
+        margin: auto;
+        font-size: 3rem;
+
+    }
+
+    /*-----------------testmonials cards-----------*/
+
+    .test_head{
+        padding-left: 7em; 
+    
+    }
+    .testmonial_title{
+        max-width: 600px;
+        font-size: 2.7rem;
+    }
+
+    .test_card{
+        display: grid;
+        grid-template-areas: 
+        "header bart"
+        "adam bart"
+        "adam michal"
+        "julita michal";
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .grid_box1{
+        grid-area: header;
+    }
+    .grid_box2{
+        grid-area: adam;
+    }
+    .grid_box3{
+        grid-area: julita;
+    }
+    .grid_box4{
+        grid-area: bart;
+    }
+    .grid_box5{
+        grid-area: michal;
+    }
+
+    /*--------------api-----------*/
+
+    .api{
+        width: 80%;
+        margin: auto;
+    }
+    .api_title{
+        max-width: 600px;
+        font-size: 3rem;
+    }
+    .api_benefits{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin: auto;
+        
+    }
+    .api_content_title{
+        font-size: 1.7rem;
+    }
+    .api_para{
+        font-size: 1.2rem;
+    }
+    .api_speed{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+
+
 }

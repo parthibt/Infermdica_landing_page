@@ -418,7 +418,7 @@
             </div>
 
             <div class="test_card">
-                <div class="test_card_box">
+                <div class="test_card_box grid_box1">
                     <img src="./images/company_logo/quote-xl.svg" alt="" class="test_card_img">
                     <p class="test_card_para">Throughout our engagement we continue to be impressed with Infermedica’s involvement and the level of support provided.</p>
                     <div class="test_card_name">
@@ -426,7 +426,7 @@
                         <p class="card_name_para">Former Head of Health Innovation at Allianz Partners</p>
                     </div>
                 </div>
-                <div class="test_card_box">
+                <div class="test_card_box grid_box2">
                     <img src="./images/adam-walker.png" alt="" class="card_box_img">
                     <div class="test_card_content">
                         <img src="./images/company_logo/quote-xl.svg" alt="" class="test_card_img">
@@ -437,7 +437,7 @@
                         <p class="card_name_para">Former Program Manager at Microsoft Healthcare</p>
                     </div>
                 </div>
-                <div class="test_card_box">
+                <div class="test_card_box grid_box3">
                     <img src="./images/company_logo/quote-xl.svg" alt="" class="test_card_img">
                     <p class="test_card_para">We highly appreciate the quality of Infermedica’s technology, ease of deployment and the outstanding ability to adapt their solutions to our needs.</p>
                     <div class="test_card_name">
@@ -445,7 +445,7 @@
                         <p class="card_name_para">Former CEO at PZU Zdrowie</p>
                     </div>
                 </div>
-                <div class="test_card_box">
+                <div class="test_card_box grid_box4">
                     <img src="./images/bart-jordens.png" alt="" class="card_box_img">
                     <div class="test_card_content">
                         <img src="./images/company_logo/quote-xl.svg" alt="" class="test_card_img">
@@ -458,7 +458,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="test_card_box">
+                <div class="test_card_box grid_box5">
                     <img src="./images/michael-rosenstock.png" alt="" class="card_box_img">
                     <div class="test_card_content">
                         <img src="./images/company_logo/quote-xl.svg" alt="" class="test_card_img">
@@ -473,7 +473,9 @@
                 </div>
                 
             </div>
-            <a href="#" class="testmonial_link">Discover success stories of our clients <img src="./images/chevron/floating-promo-arrow.fd6bcf6.svg" alt="" class="test_link_img"></a>
+            <div class="test_link">
+                <a href="#" class="testmonial_link">Discover success stories of our clients <img src="./images/chevron/floating-promo-arrow.fd6bcf6.svg" alt="" class="test_link_img"></a>
+            </div>
         </div>
 
 
@@ -485,7 +487,9 @@
             <div class="api_content">
                 <p class="cap_title">WHY WORK WITH US?</p>
                 <h1 class="api_title">Solutions driven by strong values</h1>
-                <img src="./images/api-benefits.png" alt="" class="api_img">
+                <div class="api_content_img">
+                    <img src="./images/api-benefits.png" alt="" class="api_img">
+                </div>
             </div>
 
             <div class="api_benefits">
@@ -517,32 +521,208 @@
                 </div>
             </div>
             <div class="api_speed">
-                <dvi class="api_speed_box">
+                <div class="api_speed_box">
                         <span class="api_vertical"></span>
                     <div class="api_nps">
-                        <h3 class="api_speed_title">82NPS</h3>
+                        <h1 class="api_speed_title">82NPS</h1>
                         <p class="api_speed_para">high satisfaction level of our clients</p>
                     </div>
-                </dvi>
-                <dvi class="api_speed_box">
+                </div>
+                <div class="api_speed_box">
                         <span class="api_vertical"></span>
                     <div class="api_nps">
-                        <h3 class="api_speed_title">20</h3>
+                        <h1 class="api_speed_title">20</h1>
                         <p class="api_speed_para">languages available</p>
                     </div>
-                </dvi>
-                <dvi class="api_speed_box">
+                </div>
+                <div class="api_speed_box">
                         <span class="api_vertical"></span>
                     <div class="api_nps">
-                        <h3 class="api_speed_title">93%</h3>
+                        <h1 class="api_speed_title">93%</h1>
                         <p class="api_speed_para">engine accuracy</p>
                     </div>
-                </dvi>
+                </div>
             </div>
         </div>
 
 
+        <!-------------------------------signup page------------------------>
+
+        <div class="singup">
+            <div class="singup_head">
+                <h1 class="singup_title">
+                    Let's discuss your challenges
+                </h1>
+                <p class="singup_para">
+                    Complete the form below to connect with our team of experts on implementing digital primary care solutions. Find the right path to reduce costs and improve patients’ experiences using our AI-powered platform.
+                </p>
+            </div>
+            <form action="#">
+                <div class="wrapper">
+                    <label for="fname">Full name <span class="red">*</span></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter Your name"><br>
+
+                    <label for="bemail">Bussiness email <span class="red">*</span></label><br>
+                    <input type="email" id="bemail" name="bemail" placeholder="Enter email"><br>
+
+                    <label for="company">Company <span class="red">*</span></label><br>
+                    <input type="text" id="company" name="company" placeholder="Enter company name"><br>
+
+                    <label for="org">Organization Type <span class="red">*</span><br>
+                    </label>
+                    <select id="org" name="org">
+                        <option value="" hidden> select an option</option>
+                        <option value="Health insurance company">Health insurance company</option>
+                        <option value="Life insurance company">Life insurance company</option>
+                        <option value="Travel insurance company">Travel insurance company</option>
+                        <option value="Goverment health plan">Goverment health plan</option>
+                        <option value="Single hospital">Single hospital</option>
+                    </select><br>
+
+                    <label for="country">Country <span class="red">*</span></label><br>
+                        <select name="country" id="country">
+                            <option value="" hidden class="gray">Select an opation</option>
+                            <option value="india">India</option>
+                            <option value="america">America</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="dubai">Dubai</option>
+                            <option value="reiver dell">Reiver dell</option>
+                        </select><br>
+
+                        <label for="pnumber">Phone number <span class="red">*</span></label><br>
+                        <input type="text" name="pnumber" id="pnumber"><br>
+
+                        <label for="text">How can we support your business? (optional)</label><br>
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea><br>
+
+                        <input type="checkbox" name="information" id="information">
+                        <label for="information">I want Infermedica to contact me to provide more information as indicated above <span class="red">*</span></label><br>
+
+                        <input type="checkbox" name="receive" id="receive">
+                        <label for="receive">I want receive the Infermedica Newsletter, and other content related to market insight, industry trends, blog article recommendations, and other topics</label><br>                    
+                </div>
+            </form>
+
+            <p class="singup_para_sm">You can withdraw your consent at any time. Data from the form will only be used to fulfill the purpose of the marked checkboxes above. The Controller of your data is Infermedica Sp. z o.o. (Plac Solny 14/3, 50-062 Wrocław, Poland, <a href="#" class="inf_link">(office@infermedica.com)</a>). For more information on data processing, please review our Privacy Policy or contact our data protection officer <a href="#" class="inf_link">(dpo@infermedica.com)</a></p>
+
+            <div class="btn">
+                <a href="#" class="btn_blue">Schedule a meeting</a>
+            </div>
+            
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer_warpper">
+            <div class="footer_links">
+                <div class="platform">
+                     <div class="footer_card">
+                         <h2 class="footer_title">Platform</h2>
+                         <p class="footer_para"><a href="#" class="footer_link">Medicla Guidance Platform</a></p>
+                     </div>
+                     <div class="footer_card">
+                         <h4 class="footer_title">Intelligent Core</h4>
+                         <p class="footer_para"><a href="#" class="footer_link">API</a></p>
+                         <p class="footer_para"><a href="#" class="footer_link">Inference Engine</a></p>
+                         <p class="footer_para"><a href="#" class="footer_link">Knowledge Base</a></p>
+                     </div>
+                     <div class="footer_card">
+                         <h4 class="footer_title">Solutinos</h4>
+                         <p class="footer_para"><a href="#" class="footer_link">Custom (API)</a></p>
+                         <p class="footer_para"><a href="#" class="footer_link">Triage</a></p>
+                         <p class="footer_para"><a href="#" class="footer_link">Intake</a></p>
+                         <p class="footer_para"><a href="#" class="footer_link">Symptom Checker</a></p>
+                     </div>
+                </div>
+     
+                <div class="footer_card">
+                     <h2 class="footer_title">Industries</h2>
+                     <p class="footer_para"><a href="#" class="footer_link">Healthcare Providers</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Insurers</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Telemedicine</a></p>
+                 </div>
+                <div class="footer_card">
+                     <h2 class="footer_title">Developers</h2>
+                     <p class="footer_para"><a href="#" class="footer_link">Request an account</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Developer portal</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Documentation</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">API reference</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">API referenc</a></p>
+                 </div>
+                <div class="footer_card">
+                     <h2 class="footer_title">Company</h2>
+                     <p class="footer_para"><a href="#" class="footer_link">Abouts us</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Careers</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Press</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Events</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Contact</a></p>
+                 </div>
+                <div class="footer_card">
+                     <h2 class="footer_title">Quality & safety</h2>
+                     <p class="footer_para"><a href="#" class="footer_link">External Validation</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Public Test cases</a></p>
+                 </div>
+                <div class="footer_card">
+                     <h2 class="footer_title">Resources</h2>
+                     <p class="footer_para"><a href="#" class="footer_link">Customer Stories</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Blog articles</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Reports</a></p>
+                     <p class="footer_para"><a href="#" class="footer_link">Webinar</a></p>
+                 </div>
+     
+             </div>
+     
+             <div class="veryfiers">
+                 <div class="veryfiers_simple">
+                     <div class="very_img">
+                         <img src="./images/company_logo/gdpr.33b48b6.svg" alt="" class="v_img">
+                     </div>
+                     <div class="very_content">
+                         <p class="v_para">GDPR Compliant</p>
+                     </div>
+                 </div>
+                 <div class="veryfiers_simple">
+                     <div class="very_img">
+                         <img src="./images/company_logo/iso.ee52978.svg" alt="" class="v_img">
+                     </div>
+                     <div class="very_content">
+                         <p class="v_para">ISO 13485:2016</p>
+                     </div>
+                 </div>
+                 <div class="veryfiers_simple">
+                     <div class="very_img">
+                         <img src="./images/company_logo/ISO27001.7d39816.svg" alt="" class="v_img">
+                     </div>
+                     <div class="very_content">
+                         <p class="v_para">ISO 27001:2017</p>
+                     </div>
+                 </div>
+                 <div class="veryfiers_simple">
+                     <div class="very_img">
+                         <img src="./images/company_logo/hipaa-mark.146b876.svg" alt="" class="v_img">
+                     </div>
+                     <div class="very_content">
+                         <p class="v_para">HIPAA Compliant</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="copyrights">
+                 <div class="copy_links">
+                     <p class="copy_para"><a href="#" class="copy_link">Privacy Policy</a></p>
+                     <p class="copy_para"><a href="#" class="copy_link">Cookies Policy</a></p>
+                     <p class="copy_para"><a href="#" class="copy_link">&copy; Infermedica 2022</a></p>
+                 </div>
+                 <div class="socialmedias">
+                     <a href="#" class="so_link"><i class="fa fa-brands fa-facebook"></i></a>
+                     <a href="#" class="so_link"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="#" class="so_link"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="#" class="so_link"><i class="fa-brands fa-youtube"></i></a>
+                 </div>
+             </div>
+        </div>
+        
+
+    </footer>
     
 </body>
 </html>
