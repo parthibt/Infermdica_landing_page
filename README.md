@@ -1,1 +1,1 @@
-# Infermdica_landing_page
+# Infermedica Landing page
